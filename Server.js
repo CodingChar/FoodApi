@@ -9,6 +9,7 @@ function Server(PORT) {
 
 
   app.get('/', routes.getFoods)
+  app.get('get-food', routes.getFood)
   app.post('/add-food', routes.addFood)
   app.put('/update-food', routes.editFood)
   app.delete('/delete-food', routes.removeFood)
