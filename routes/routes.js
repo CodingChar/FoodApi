@@ -22,7 +22,7 @@ async function removeFood(req, res, next){
 async function editFood(req, res, next){
     //for now it only edits the name
     const updatedFood = await Food.updateOne({name: req.body.name}, 
-        {name: req.body.updated})
+        {name: req.body._name, kcal: req.body._kcal})
     res.status(200).json(updatedFood)
     next()
 }
