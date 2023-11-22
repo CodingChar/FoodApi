@@ -2,6 +2,17 @@
 
 <p>Basic API with CRUD functionalities</p>
 
+## Basic Food Object  structure
+Food = {
+ name: String,
+ kcal: Number 
+}
+<h2>Add the attribute "_name" and "_kcal" if you are attempting to update some specific object of the database.</h2>
+<span>For example: req.body = {name: "Lettuce", _name: "Banana", _kcal: 22}</span>
+<p>If u sent the request to the update endpoint, there will be a function that will take "name" to search for an object with the same name in the database
+and then will modify the name of the found object, with "_name" and it will also modify the value of "kcal" with the value inside of "_kcal"
+</p>
+
 ## First version endpoints and their http protocols:
 <h2>GET</h2>
 <ul>
